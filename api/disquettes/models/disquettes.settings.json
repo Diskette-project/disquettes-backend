@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "disquettes",
+  "info": {
+    "name": "Disquettes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "content": {
+      "type": "richtext",
+      "required": true,
+      "unique": true
+    },
+    "creator": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "confirmed": {
+      "type": "boolean",
+      "default": false
+    },
+    "confirmed_by": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

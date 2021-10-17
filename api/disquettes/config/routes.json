@@ -1,0 +1,64 @@
+{
+  "routes": [
+
+    {
+      "method": "GET",
+      "path": "/randomDisquette",
+      "handler": "disquettes.random",
+      "config": {
+        "policies": []
+      }
+    },
+
+
+    
+    {
+      "method": "GET",
+      "path": "/disquettes",
+      "handler": "disquettes.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/disquettes/count",
+      "handler": "disquettes.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/disquettes/:id",
+      "handler": "disquettes.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/disquettes",
+      "handler": "disquettes.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/disquettes/:id",
+      "handler": "disquettes.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/disquettes/:id",
+      "handler": "disquettes.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

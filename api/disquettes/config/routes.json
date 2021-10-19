@@ -3,15 +3,12 @@
 
     {
       "method": "GET",
-      "path": "/randomDisquette",
+      "path": "/disquettes/random",
       "handler": "disquettes.random",
       "config": {
         "policies": []
       }
-    },
-
-
-    
+    },    
     {
       "method": "GET",
       "path": "/disquettes",

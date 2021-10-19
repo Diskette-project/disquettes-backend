@@ -1,6 +1,5 @@
 'use strict';
-const { sanitizeEntity } = require('strapi-utils');
-
+const { sanitizeEntity, parseMultipartData } = require('strapi-utils');
 module.exports = {
 
     async random (ctx) {
@@ -8,5 +7,4 @@ module.exports = {
         const randomDisquette = await strapi.services.disquettes.random();
         return sanitizeEntity(randomDisquette, { model: strapi.models.disquettes });
     }
-    
 };

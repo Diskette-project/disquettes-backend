@@ -8,15 +8,10 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "content": {
-      "type": "richtext",
-      "required": true,
-      "unique": true
-    },
     "creator": {
       "plugin": "users-permissions",
       "model": "user"
@@ -28,6 +23,18 @@
     "confirmed_by": {
       "plugin": "users-permissions",
       "model": "user"
+    },
+    "content": {
+      "type": "json",
+      "required": true,
+      "unique": true
+    },
+    "tags": {
+      "via": "disquettes",
+      "collection": "tags"
+    },
+    "uuid": {
+      "type": "uid"
     }
   }
 }

@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tags",
+  "info": {
+    "name": "Tags",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "activate": {
+      "type": "boolean",
+      "default": true,
+      "unique": false
+    },
+    "tag": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "disquettes": {
+      "via": "tags",
+      "collection": "disquettes",
+      "dominant": true
+    }
+  }
+}

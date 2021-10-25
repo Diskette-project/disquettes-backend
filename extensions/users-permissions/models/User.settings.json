@@ -58,6 +58,14 @@
       "via": "users",
       "plugin": "users-permissions",
       "configurable": false
+    },
+    "likes": {
+      "via": "liked_by",
+      "collection": "disquettes"
+    },
+    "unlikes": {
+      "via": "unliked_by",
+      "collection": "disquettes"
     }
   }
 }

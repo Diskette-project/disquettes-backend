@@ -13,6 +13,7 @@
   "pluginOptions": {},
   "attributes": {
     "creator": {
+      "private": true,
       "plugin": "users-permissions",
       "model": "user"
     },
@@ -21,6 +22,7 @@
       "default": false
     },
     "confirmed_by": {
+      "private": true,
       "plugin": "users-permissions",
       "model": "user"
     },
@@ -35,6 +37,20 @@
     },
     "uuid": {
       "type": "uid"
+    },
+    "liked_by": {
+      "private": true,
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "likes",
+      "dominant": true
+    },
+    "unliked_by": {
+      "private": true,
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "unlikes",
+      "dominant": true
     }
   }
 }

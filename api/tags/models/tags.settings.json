@@ -26,6 +26,11 @@
       "via": "tags",
       "collection": "disquettes",
       "dominant": true
+    },
+    "favorite": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }

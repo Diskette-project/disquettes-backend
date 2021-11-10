@@ -8958,7 +8958,7 @@ sliced@1.0.1:
 
 slugify@^1.6.1:
   version "1.6.1"
-  resolved "https://registry.npmjs.org/slugify/-/slugify-1.6.1.tgz"
+  resolved "https://registry.yarnpkg.com/slugify/-/slugify-1.6.1.tgz#a5fcaef29f4e57c6e932ce7044b6ffd9cf81b641"
   integrity sha512-5ofqMTbetNhxlzjYYLBaZFQd6oiTuSkQlyfPEFIMwgUABlZQ0hbk5xIV9Ydd5jghWeRoO7GkiJliUvTpLOjNRA==
 
 snapdragon-node@^2.0.1:
